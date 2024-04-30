@@ -1,0 +1,132 @@
+:root {
+    --beige: #b4816b;
+    --brown: #120806;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    scroll-behavior: smooth;
+    color: #fff;
+}
+
+section {
+    height: 100vh;
+    padding: 80px 60px;
+}
+
+/* HERO */
+
+.hero {
+    background-color: var(--beige);
+    background-image: url('../assets/hero.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+}
+
+.hero div h1 {
+    margin: 80px 0;
+    width: 50%;
+    font-size: 3.5rem;
+}
+
+.hero div button {
+    background-color: vaR(--beige);
+    border: none;
+    color: var(--brown);
+    padding: 10px 25px;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.hero div button:hover {
+    background-color: #000;
+    color: var(--beige);
+    cursor: pointer;
+}
+
+/* /HERO */
+
+/* /ABOUT */
+
+.about {
+    background-color: #090909;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    text-align: left;
+    
+}
+
+.about-text-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 90px;
+}
+
+.about-text span {
+    background-color: var(--beige);
+    padding: 5px;
+}
+
+.about-text p {
+    margin-top: 20px;
+}
+
+/* /ABOUT */
+
+/* AREAS */
+
+.areas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.area-text {
+    color: #000;
+    display: grid;
+    align-content: space-evenly;
+    padding-right: 60px;
+}
+
+.area-text h2 {
+    font-size: 2.5rem;
+}
+
+.area-img {
+    background-image: url('../assets/area-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.area-img span {
+    font-size: 1.5rem;
+}
+
+
+/* /AREAS */
+
+/* REVIEW */
+
+.reviews {
+    background-color: var(--beige);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.reviewas-container {
+    padding: 60px;
+    display: flex;
+    align-items: space-evenly;
+}
+
+/* /REVIEW */
