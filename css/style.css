@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
+
 :root {
     --beige: #b4816b;
+    --beige-darker: #725346;
     --brown: #120806;
 }
 
@@ -12,6 +15,16 @@
 html, body {
     scroll-behavior: smooth;
     color: #fff;
+
+    font-family: "Sedan SC", serif;
+}
+
+h1, h3, h4 {
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 1.2rem;
 }
 
 section {
@@ -31,21 +44,22 @@ section {
 }
 
 .hero div h1 {
-    margin: 80px 0;
-    width: 50%;
+    margin: 35px 0 70px 0;
+    width: 700px;
     font-size: 3.5rem;
 }
 
-.hero div button {
+.hero div a {
     background-color: vaR(--beige);
     border: none;
     color: var(--brown);
     padding: 10px 25px;
     font-size: 1rem;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
-.hero div button:hover {
+.hero div a:hover {
     background-color: #000;
     color: var(--beige);
     cursor: pointer;
@@ -53,36 +67,70 @@ section {
 
 /* /HERO */
 
-/* /ABOUT */
+/* /TEAM */
 
-.about {
+.team {
+    height: 100%;
+    padding: 100px;
     background-color: #090909;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
 }
 
-.about h2 {
-    font-size: 2.5rem;
-    text-align: left;
-    
+.team > h2 {
+    padding-top: 80px;
+    text-align: center;
+    color: var(--beige);
 }
 
-.about-text-container {
-    display: flex;
-    align-items: flex-end;
-    gap: 90px;
+.our-team {
+    width: 1200px;
+    height: 675px;
+    margin: auto;
+    text-align: center;
+    padding: 60px;
 }
 
-.about-text span {
-    background-color: var(--beige);
-    padding: 5px;
+#img-container img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 15px;
+    box-shadow: 10px -5px 0px var(--beige-darker);
 }
 
-.about-text p {
-    margin-top: 20px;
+#employee-name {
+    color: var(--beige);
 }
 
-/* /ABOUT */
+#employee-speciality {
+    margin: 10px;
+    color: var(--beige);
+}
+
+#employee-description {
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+    color: var(--beige);
+}
+
+.arrows button {
+    background-color: #00000000;
+    border: none;
+    font-size: 5rem;
+    color: var(--beige-darker);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.arrows button:hover {
+    color: var(--beige);
+}
+
+#prev {
+    margin-right: 55px;
+}
+
+/* /TEAM */
 
 /* AREAS */
 
@@ -120,13 +168,106 @@ section {
 .reviews {
     background-color: var(--beige);
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    align-content: space-between;
+    padding: 50px 0;
+    margin: 0;
+    text-align: center;
 }
 
-.reviewas-container {
+.reviews-container-down {
     padding: 60px;
-    display: flex;
-    align-items: space-evenly;
+    display: grid;
+    align-content: space-between;
+}
+
+.reviews-container-down div {
+    margin: 10px;
+}
+
+.review-container-up h2 {
+    font-size: 3rem;
+}
+
+.contact {
+    color: var(--brown);
+    position:  relative;
+    padding: 15px;
+    text-align: left;
 }
 
 /* /REVIEW */
+/* MEDIAS */
+
+@media (max-width: 1500px) {  
+    .reviews {
+        padding: 15px 0;
+        height: 100%;
+    }
+}
+
+@media (max-width: 1360px) {
+    .areas {
+        display: flex;
+    }
+
+    .area-text {
+        padding-right: 0px;
+        text-align: justify;
+    }
+
+    .area-text h2{
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .area-img {
+        display: none;
+    }
+
+    .team {
+        padding-right: 0;
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .our-team {
+        width: 100%;
+        margin-bottom: 120px;
+    }
+
+    #employee-description {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 60px 0px;
+        margin: 0;
+        height: 100vh;
+        text-align: center;
+    }
+
+    .hero div h1 {
+        margin: 60px 0;
+        width: unset;
+        font-size: 3rem;
+    }
+    
+    section {
+        height: 100%;
+    }
+
+    .reviews {
+        display: block;
+    }
+    .reviews-container-down {
+        padding: 60px 25px;
+    }
+
+    #employee-description {
+        height: 300px;
+    }
+}
