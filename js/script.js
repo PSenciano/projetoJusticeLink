@@ -2,35 +2,35 @@
 const employees = [
     {
         id: 0,
-        img: "../assets/employees/Gabriel-Junior.jpg",
+        img: "../assets/employees/gabriel-junior.jpg",
         name: "Gabriel Junior",
         speciality: "Direito do Trabalho",
         text: "Gabriel Junior é especialista em direito do trabalho, lida com trabalhadores ou empregadores em questões relacionadas a contratos de trabalho, demissões, discriminação no local de trabalho, segurança no local de trabalho e outras questões trabalhistas."
     }, 
     {
         id: 1,
-        img: "../assets/employees/Mariana-Oliveira.jpg",
+        img: "../assets/employees/mariana-oliveira.jpg",
         name: "Marina Oliveira",
         speciality: "Direito da Família",
         text: "Marina Oliveira é especialista em direito da família, lida com questões relacionadas a casamentos, divórcios, guarda de filhos, pensão alimentícia, adoção e outras questões familiares.",
     },
     {
         id: 2,
-        img: "../assets/employees/Anabella-Silva.jpg",
+        img: "../assets/employees/anabella-silva.jpg",
         name: "Anabella Silva",
         speciality: "Direito Empresarial",
         text: "Anabella Silva é especialista em direito empresarial, lida com questões relacionadas a empresas, incluindo formação de empresas, fusões e aquisições, contratos comerciais, litígios empresariais e conformidade regulatória.",
     },
     {
         id: 3,
-        img: "../assets/employees/Rafael-Pereira.jpg",
+        img: "../assets/employees/rafael-pereira.jpg",
         name: "Rafael Pereira",
         speciality: "Direito Penal",
         text: "Rafael Pereira é especialista em direito penal, lida com casos que envolvem acusações criminais, defendendo indivíduos acusados de crimes ou representando o Estado na acusação de crimes.",
     }, 
     {
         id: 4,
-        img: "../assets/employees/Marcos-Azevedo.jpg",
+        img: "../assets/employees/marcos-azevedo.jpg",
         name: "Marcos Azevedo",
         speciality: "Direito Ambiental",
         text: "Marcos Azevedo é especialista em direito ambiental, lida com questões relacionadas à proteção do meio ambiente, incluindo regulamentações governamentais, conservação de recursos naturais, poluição e responsabilidade ambiental.",
